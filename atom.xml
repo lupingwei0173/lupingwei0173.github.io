@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-15T07:18:59.983Z</updated>
+  <updated>2019-10-15T15:10:45.238Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,12 +21,14 @@
     <link href="http://yoursite.com/2019/10/15/Test/"/>
     <id>http://yoursite.com/2019/10/15/Test/</id>
     <published>2019-10-15T07:18:22.000Z</published>
-    <updated>2019-10-15T07:18:59.983Z</updated>
+    <updated>2019-10-15T15:10:45.238Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="旅行" scheme="http://yoursite.com/categories/%E6%97%85%E8%A1%8C/"/>
     
     
       <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
@@ -38,12 +40,14 @@
     <link href="http://yoursite.com/2019/10/01/Hello-World-0/"/>
     <id>http://yoursite.com/2019/10/01/Hello-World-0/</id>
     <published>2019-09-30T17:41:20.000Z</published>
-    <updated>2019-09-30T17:49:14.564Z</updated>
+    <updated>2019-10-15T15:10:54.014Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="技术交流" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E4%BA%A4%E6%B5%81/"/>
     
     
       <category term="这是我自己搭建的blog!" scheme="http://yoursite.com/tags/%E8%BF%99%E6%98%AF%E6%88%91%E8%87%AA%E5%B7%B1%E6%90%AD%E5%BB%BA%E7%9A%84blog/"/>

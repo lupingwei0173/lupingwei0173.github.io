@@ -4,6 +4,9 @@
     <title>Test</title>
     <url>/2019/10/15/Test/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>旅行</category>
+      </categories>
       <tags>
         <tag>测试</tag>
       </tags>
@@ -12,6 +15,9 @@
     <title>Hello World</title>
     <url>/2019/10/01/Hello-World-0/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>技术交流</category>
+      </categories>
       <tags>
         <tag>这是我自己搭建的blog!</tag>
       </tags>
