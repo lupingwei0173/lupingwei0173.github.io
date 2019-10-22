@@ -42,23 +42,4 @@
     
   </entry>
   
-  <entry>
-    <title>Test</title>
-    <link href="http://yoursite.com/2019/10/15/Test/"/>
-    <id>http://yoursite.com/2019/10/15/Test/</id>
-    <published>2019-10-15T07:18:22.000Z</published>
-    <updated>2019-10-21T02:57:01.579Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="旅行" scheme="http://yoursite.com/categories/%E6%97%85%E8%A1%8C/"/>
-    
-    
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
 </feed>
