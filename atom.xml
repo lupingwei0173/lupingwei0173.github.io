@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-28T15:39:49.284Z</updated>
+  <updated>2019-10-28T15:44:37.318Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2019/10/28/Win10-%E5%AE%89%E8%A3%85VMW%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
     <id>http://yoursite.com/2019/10/28/Win10-安装VMW虚拟机教程/</id>
     <published>2019-10-28T02:18:01.000Z</published>
-    <updated>2019-10-28T15:39:49.284Z</updated>
+    <updated>2019-10-28T15:44:37.318Z</updated>
     
-    <content type="html"><![CDATA[<p>VMW安装教程之前,博主先讲一下缘由及心路历程,由于博主公司的产品响应实在烂的一匹(小声逼逼(ಥ﹏ಥ)…),so博主准备在win10上装一个loadrunner具体测试一下,于是走上了一条不归路…<br>由于对浏览器的兼容及破解等优势,博主果断选择了LR11,经过九九八十一难终于安装好了,奈何LR11不兼容win10自带的IE11(此处应有吐槽),想到LR bin文件下有自带Firefox(博主太机智了O(∩_∩)O)…<br>直接拉出来录个脚本试试,纳尼？经常崩溃,难道版本太低？果断换个Firefox 24.0 again…上来报错”couldn’t load xpcom”,What the FUCK!!!!<br>论坛遛遛,吃瓜群众也没有啥好的解决办法,听说Win10牛B的系统自带虚拟机Hyper-V于是打算试试…<br>一看发现没有Hyper-V,什么情况？一查原来win10家庭版需要自己安装,无语…<br>想到VMware比较强大,果断改换安装VMW。<br>好了,以上就是博主的心路历程及悲惨遭遇,下面不多bb,博主将安装方法具体步骤分享出来希望可以对想要安装VMW的同学有所帮助</p><p>下载地址：<br>VMware15(32/64)位：<a href="https://pan.baidu.com/s/1WHeqpZkUJBm63hupu9hgRw" target="_blank" rel="noopener">https://pan.baidu.com/s/1WHeqpZkUJBm63hupu9hgRw</a><br>提取码：qvry<br>格式不转了,美观方面凑合看吧…</p><p>(一)VMware15虚拟机安装教程</p><p>1、下载好VMware15并解压后,运行VMware-15.exe<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/1.png" alt><br>2、下一步<br>3、勾选”接受相关协议”,下一步<br>4、点击”更改”更改软件的安装目录,建议不要安在C盘,点击下一步<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/2.png" alt><br>5、取消勾选，然后点击下一步,如图<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/3.png" alt><br>6、点击下一步<br>7、点击安装<br>8、安装中,稍等一会…<br>9、点击许可证<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/4.png" alt><br>10、在框中输入“FC502-8AD82-08D4P-4FQEE-ZC8D0”然后点击”输入”<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/5.png" alt><br>11、点击完成即可安装成功</p><p>在下一篇blog中博主会分享VMW虚拟机上安装Win7系统</p>]]></content>
+    <content type="html"><![CDATA[<p>VMW安装教程之前,博主先讲一下缘由及心路历程,由于博主公司的产品响应实在烂的一匹(小声逼逼(ಥ﹏ಥ)…),so博主准备在win10上装一个loadrunner具体测试一下,于是走上了一条不归路…<br>由于对浏览器的兼容及破解等优势,博主果断选择了LR11,经过九九八十一难终于安装好了,奈何LR11不兼容win10自带的IE11(此处应有吐槽),想到LR bin文件下有自带Firefox(博主太机智了O(∩_∩)O)…<br>直接拉出来录个脚本试试,纳尼？经常崩溃,难道版本太低？果断换个Firefox 24.0 again…上来报错”couldn’t load xpcom”,What the FUCK!!!!<br>论坛遛遛,吃瓜群众也没有啥好的解决办法,听说Win10牛B的系统自带虚拟机Hyper-V于是打算试试…<br>一看发现没有Hyper-V,什么情况？一查原来win10家庭版需要自己安装,无语…<br>想到VMware比较强大,果断改换安装VMW。<br>好了,以上就是博主的心路历程及悲惨遭遇,下面不多bb,博主将安装方法具体步骤分享出来希望可以对想要安装VMW的同学有所帮助</p><p>下载地址：<br>VMware15(32/64)位：<a href="https://pan.baidu.com/s/1WHeqpZkUJBm63hupu9hgRw" target="_blank" rel="noopener">https://pan.baidu.com/s/1WHeqpZkUJBm63hupu9hgRw</a><br>提取码：qvry<br>格式不转了,美观方面凑合看吧…</p><p>(一)VMware15虚拟机安装教程<br>1、下载好VMware15并解压后,运行VMware-15.exe<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/1.png" alt><br>2、下一步<br>3、勾选”接受相关协议”,下一步<br>4、点击”更改”更改软件的安装目录,建议不要安在C盘,点击下一步<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/2.png" alt><br>5、取消勾选，然后点击下一步,如图<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/3.png" alt><br>6、点击下一步<br>7、点击安装<br>8、安装中,稍等一会…<br>9、点击许可证<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/4.png" alt><br>10、在框中输入“FC502-8AD82-08D4P-4FQEE-ZC8D0”然后点击”输入”<br><img src="/2019/10/28/Win10-安装VMW虚拟机教程/5.png" alt><br>11、点击完成即可安装成功</p><p>在下一篇blog中博主会分享VMW虚拟机上安装Win7系统的方法</p>]]></content>
     
     <summary type="html">
     
