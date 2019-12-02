@@ -98,7 +98,13 @@
 <meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/1.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/3.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/4.jpg">
-<meta property="og:updated_time" content="2019-12-02T01:58:27.344Z">
+<meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/5.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/6.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/7.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/8.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/9.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/10.jpg">
+<meta property="og:updated_time" content="2019-12-02T02:18:17.671Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL语句总结">
 <meta name="twitter:description" content="基础篇SQL selectselect 列1,列2  from 表 —查询多列信息select * from 表 —查询所有列信息 SQL distinctselect distinct 列 from 表—查询列中不重复数据 SQL whereselect 列 from 表 where 列 运算符 值 SQL and &amp;amp; orselect * from 表 where 列 = 值 and">
@@ -382,9 +388,7 @@
 <p>SQL in<br>select * from 表 where 列 in (值1,值2,值3…)—查询表中列的多组数据</p>
 <p>SQL between<br>select * from 表 where 列 between 值1 and 值2—查询表中列值1到值2之间的数据（首字母） Ps:不同数据库含义不同，有的包含值1不包含值2;有的包含值1和值2;有的不包含值1和值2;oracle数据库都包含</p>
 <p>SQL aliases(as)<br>select * from 表 AS b where b.列 = 值—将表取别名b,并查询列为值的数据（oracle给表取别名不as，直接空格省略即可，因为怕与关键字重复）<br>select 列1 as 别1， 列2 as 别2，… from 表 —给列1，列2…取别名后，查询出名为别1，别2的列（oracle给列取别名可以省略as，直接空格加别名即可）</p>
-<p>SQL join<br><img src="/2019/11/21/SQL语句总结/3.jpg" alt><br>select Persons.LastName, Persons.FirstName, Orders.OrderNo<br>from Persons<br>inner join Orders<br>on Persons.Id_P=Orders.Id_P<br>order by Persons.LastName</p>
-<p>结果：<br><img src="/2019/11/21/SQL语句总结/4.jpg" alt><br>join/inner join: 如果表中有至少一个匹配，则返回行</p>
-<p>LEFT JOIN: 即使右表中没有匹配，也从左表返回所有的行<br>RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行<br>FULL JOIN: 只要其中一个表中存在匹配，就返回行</p>
+<p>SQL join<br>join/inner join:两张表中有至少一个匹配，才会返回行<br><img src="/2019/11/21/SQL语句总结/3.jpg" alt><br>select Persons.LastName, Persons.FirstName, Orders.OrderNo<br>from Persons<br>inner join Orders<br>on Persons.Id_P=Orders.Id_P<br>order by Persons.LastName<br>结果：<br><img src="/2019/11/21/SQL语句总结/4.jpg" alt><br>left join: 即使右表中没有匹配，也从左表返回所有的行<br><img src="/2019/11/21/SQL语句总结/5.jpg" alt><br>select Persons.LastName, Persons.FirstName, Orders.OrderNo<br>from Persons<br>left join Orders<br>on Persons.Id_P=Orders.Id_P<br>order by Persons.LastName<br>结果：<br><img src="/2019/11/21/SQL语句总结/6.jpg" alt><br>right join: 即使左表中没有匹配，也从右表返回所有的行<br><img src="/2019/11/21/SQL语句总结/7.jpg" alt><br>select Persons.LastName, Persons.FirstName, Orders.OrderNo<br>from Persons<br>right join Orders<br>on Persons.Id_P=Orders.Id_P<br>order by Persons.LastName<br>结果：<br><img src="/2019/11/21/SQL语句总结/8.jpg" alt><br>full join: 只要其中一个表中存在匹配，就返回行<br><img src="/2019/11/21/SQL语句总结/9.jpg" alt><br>select Persons.LastName, Persons.FirstName, Orders.OrderNo<br>from Persons<br>full join Orders<br>on Persons.Id_P=Orders.Id_P<br>order by Persons.LastName<br>结果：<br><img src="/2019/11/21/SQL语句总结/10.jpg" alt></p>
 
       
     </div>
