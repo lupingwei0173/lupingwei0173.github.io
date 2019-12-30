@@ -107,7 +107,9 @@
 <meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/11.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/12.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/13.jpg">
-<meta property="og:updated_time" content="2019-12-05T14:06:38.144Z">
+<meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/14.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/21/SQL语句总结/15.jpg">
+<meta property="og:updated_time" content="2019-12-30T09:13:22.792Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL语句总结">
 <meta name="twitter:description" content="基础篇SQL selectselect 列1,列2  from 表 —查询多列信息select * from 表 —查询所有列信息 SQL distinctselect distinct 列 from 表—查询列中不重复数据 SQL whereselect 列 from 表 where 列 运算符 值 SQL and &amp;amp; orselect * from 表 where 列 = 值 and">
@@ -398,7 +400,22 @@
 <p>SQL create table<br>create table 表名称<br>(<br>列名称1 数据类型,<br>列名称2 数据类型,<br>列名称3 数据类型,<br>….<br>)<br><img src="/2019/11/21/SQL语句总结/11.jpg" alt></p>
 <p>SQL not null<br>create table Persons<br>(<br>Id_P int not null,<br>LastName varchar(255) not null,<br>FirstName varchar(255),<br>Address varchar(255),<br>City varchar(255)<br>)<br>—not null 约束强制列不接受null值，如果不向字段添加值，就无法插入新记录或者更新记录。</p>
 <p>SQL unique<br>在表创建时，在列创建unique约束(每个表可以有多个unique约束，但是每个表只能有一个primary key约束。)<br><img src="/2019/11/21/SQL语句总结/12.jpg" alt><br>命名unique约束，并为多个列定义unique约束<br><img src="/2019/11/21/SQL语句总结/13.jpg" alt><br>在表已被创建时，在列创建unique约束<br>alter table 表 add unique (列)<br>命名unique约束，并为多个列定义unique约束<br>alter table 表 add constraint uc_PersonID unique (Id_P,LastName)<br>撤销unique约束<br>alter table 表 drop constraint uc_PersonID</p>
-<p>SQL primary</p>
+<p>SQL create index<br>create index index_name on 表(列)—在表上创建一个简单的索引(允许重复)<br>create unique index index_name on 表(列)—在表上创建一个唯一的索引(不允许重复)</p>
+<p>SQL drop<br>drop index index_name—删除表格中的索引<br>drop table 表名—删除表(结构、属性以及索引均被删除)<br>drop database 数据库名—删除数据库<br>truncate table 表名—仅删除表格中的数据</p>
+<p>SQL alter<br>alter table 表 add 列 datatype—表中添加列<br>alter table 表 drop column 列—删除表中的列</p>
+<p>SQL null<br>select * FROM 表 where 列 is null—表中列为空的数据<br>select * FROM 表 where 列 is not null—表中列不为空的数据</p>
+<p>高级篇<br>SQL avg()<br>select avg(列) from 表—返回表中列的平均值(null值不包括在计算中)</p>
+<p>SQL count()<br>select count(列) from 表—返回指定列的值的数目(null不计入)<br>select count(*) from 表—返回表中的记录数<br>select count(distinct 列) from 表—返回指定列的不同值的数目</p>
+<p>SQL first()<br>select first(列) from 表—返回指定的字段中第一个记录的值</p>
+<p>SQL last()<br>select last(列) from 表—返回指定的字段中最后一个记录的值</p>
+<p>SQL max()<br>select max(列) from 表—返回一列中的最大值(null不计入)</p>
+<p>SQL min()<br>select min(列) from 表—返回一列中的最小值(null不计入)</p>
+<p>SQL sum()<br>select sum(列) from 表—返回数值列的总数</p>
+<p>SQL ucase()<br>select ucase(列) from 表—把列中的字段转换为大写</p>
+<p>SQL lcase()<br>select lcase(列) from 表—把列中的字段转换为小写</p>
+<p>SQL mid()<br>select mid(列,start[,length]) from 表—从文本字段中提取字符<br><img src="/2019/11/21/SQL语句总结/14.jpg" alt></p>
+<p>SQL len()<br>select len(列) from 表—返回文本字段中值的长度</p>
+<p>SQL round()<br>select round(列,decimals) from 表—把数值字段舍入为指定的小数位数。<br><img src="/2019/11/21/SQL语句总结/15.jpg" alt></p>
 
       
     </div>
