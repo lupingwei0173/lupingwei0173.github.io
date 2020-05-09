@@ -16,13 +16,13 @@
 <p>6、CONNECT请求：能够将连接改为管道方式的代理服务器。</p>
 <p>7、OPTIONS请求：允许客户端查看服务器的性能。</p>
 <p>8、TRACE请求：显示服务器收到的请求，主要用于测试或诊断。</p>
-<p><img src="/2020/05/09/浅谈postman/2.jpg" alt><br>三、postman-post方式几种请求参数区别<br>1、form-data：就是http请求中的multipart/form-data,它将表单数据处理为一条消息，以标签为单元，用分隔符分开。既可以单独上传键值对，也可以直接上传文件（当上传字段是文件时，会有Content-Type来说明文件类型,content-disposition，用来说明字段的一些信息；由于有boundary隔离，所以multipart/form-data既可以上传文件，也可以上传键值对，它采用了键值对的方式，所以可以上传多个文件但该文件不会作为历史保存，只能在每次需要发送请求的时候，重新添加文件。）</p>
+<p><img src="/2020/05/09/浅谈postman/2.png" alt><br>三、postman-post方式几种请求参数区别<br>1、form-data：就是http请求中的multipart/form-data,它将表单数据处理为一条消息，以标签为单元，用分隔符分开。既可以单独上传键值对，也可以直接上传文件（当上传字段是文件时，会有Content-Type来说明文件类型,content-disposition，用来说明字段的一些信息；由于有boundary隔离，所以multipart/form-data既可以上传文件，也可以上传键值对，它采用了键值对的方式，所以可以上传多个文件但该文件不会作为历史保存，只能在每次需要发送请求的时候，重新添加文件。）</p>
 <p>2、x-www-form-urlencoded：对应信息头-application/x-www-from-urlencoded，会将表单内的数据转换为键值对，比如：name=java&amp;age = 23</p>
 <p>3、raw：可以上传任意类型的文本，比如text、json、xml等,所有填写的text都会随着请求发送；</p>
 <p>4、binary：对应信息头-Content-Type:application/octet-stream，只能上传二进制文件，且没有键值对，一次只能上传一个文件, 也不能保存历史，每次选择文件，提交；</p>
 <p>PS:<br>multipart/form-data与x-www-form-urlencoded区别：</p>
 <p>multipart/form-data：既可以上传文件等二进制数据，也可以上传表单键值对，只是最后会转化为一条信息；</p>
-<p>x-www-form-urlencoded：只能上传键值对，并且键值对都是间隔分开的。</p>
+<p>x-www-form-urlencoded：只能上传键值对，并且键值对都是间隔分开的。<br><img src="/2020/05/09/浅谈postman/3.png" alt></p>
 ]]></content>
       <categories>
         <category>技术分享</category>
