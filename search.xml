@@ -17,7 +17,7 @@
 <p>由于fiddler一直拥有通信用对称密钥，所以在整个https通信过程中信息对其透明。</p>
 <p>三、Fiddler的配置及使用<br>Fiddler要能进行抓包，需要确保Capture Traffic是开启的（安装后是默认开启的），勾选File-&gt;Capture Traffic，也可以直接点击Fiddler界面左下角的图标开启和关闭抓包。<br><img src="/2020/05/14/浅谈Fiddler/1.png" alt><br>如果想抓HTTPS的请求，Fiddler需要做如下的设置<br>Tools –&gt; Options ，然后按下图进行勾选，<br>将Fiddler正式安装在电脑上，点Action–&gt; Trust Root Certificate–&gt; Yes ,一步步确定<br><img src="/2020/05/14/浅谈Fiddler/2.png" alt><br>如果使用IE则代理不需要配置，其他浏览器都需要配置代理，否则Fiddler抓不了包。以Chrome浏览器为例，需要配置代理，fiddler才能抓到包。<br><img src="/2020/05/14/浅谈Fiddler/3.png" alt></p>
 <p>四、手机的配置(Android)</p>
-<p>先设置到代理，电脑需要连接WIFI，手机与电脑连接相同的WIFI，路径：设置 – &gt;已连接的WIFI –&gt;高级设置–&gt;代理：<br>代理服务器主机名的获取，cmd –&gt; ipconfig –&gt; IPv4 地址对应的 IP就是代理服务器主机名<br><img src="/2020/05/14/浅谈Fiddler/4.png" alt><br>Fiddler上再进行如下配置<br>路径： Tools –&gt; Options –&gt; 勾选：Allow remote Computers to connect<br><img src="/2020/05/14/浅谈Fiddler/5.png" alt><br>手机要能够正常抓包，还需要安装证书，在手机浏览器里输入：（代理服务器地址：端口号）<br><img src="/2020/05/14/浅谈Fiddler/6.png" alt><br>.<br>![](7.png）<br>五、Fiddler数据包分析</p>
+<p>先设置到代理，电脑需要连接WIFI，手机与电脑连接相同的WIFI，路径：设置 – &gt;已连接的WIFI –&gt;高级设置–&gt;代理：<br>代理服务器主机名的获取，cmd –&gt; ipconfig –&gt; IPv4 地址对应的 IP就是代理服务器主机名<br><img src="/2020/05/14/浅谈Fiddler/4.png" alt><br>Fiddler上再进行如下配置<br>路径： Tools –&gt; Options –&gt; 勾选：Allow remote Computers to connect<br><img src="/2020/05/14/浅谈Fiddler/5.png" alt><br>手机要能够正常抓包，还需要安装证书，在手机浏览器里输入：（代理服务器地址：端口号）<br><img src="/2020/05/14/浅谈Fiddler/6.png" alt><br>的<br>![](7.png）<br>五、Fiddler数据包分析</p>
 <p>#：顺序号，按照抓包的顺序从1递增</p>
 <p>Result：HTTP状态码　　　　　　</p>
 <p>Protocol：请求使用的协议，如HTTP/HTTPS/FTP等</p>
