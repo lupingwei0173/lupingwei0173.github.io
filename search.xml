@@ -28,7 +28,7 @@
 <p>Content-Type：请求响应的类型</p>
 <p>Process：发送此请求的进程ID</p>
 <p>Comments：备注 </p>
-<p>Custom：自定义值<br><img src="/2020/05/14/浅谈Fiddler/8.png" alt><br><img src="/2020/05/14/浅谈Fiddler/8.png" alt><br><img src="/2020/05/14/浅谈Fiddler/8.png" alt><br><img src="/2020/05/14/浅谈Fiddler/8.png" alt><br>Request Header（请求头域）<br>请求方式：GET<br>协议：HTTP/1.1</p>
+<p>Custom：自定义值<br><img src="/2020/05/14/浅谈Fiddler/8.png" alt><br><img src="/2020/05/14/浅谈Fiddler/9.png" alt><br><img src="/2020/05/14/浅谈Fiddler/10.png" alt><br><img src="/2020/05/14/浅谈Fiddler/11.png" alt><br>Request Header（请求头域）<br>请求方式：GET<br>协议：HTTP/1.1</p>
 <ol>
 <li><p>Cache 头域<br>if-Modified-since：缓存<br>if-None-Match：可提高性能（在Response中添加ETag信息，客户端再次请求资源，Request中加入if-None-Match（ETag的值），服务器验证ETag，若没改变返回状态码304，有改变，返回状态码200）<br>Pragma：防止页面被缓存<br>Cache-Control：Response—Request遵循的缓存机制<br>public：可以被任何缓存所缓存<br>private:内容只缓存在私有缓存中<br>no-cache：所有内容都不会被缓存</p>
 </li>
