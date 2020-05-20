@@ -28,7 +28,8 @@
 <p>Content-Type：请求响应的类型</p>
 <p>Process：发送此请求的进程ID</p>
 <p>Comments：备注 </p>
-<p>Custom：自定义值<br><img src="/2020/05/14/浅谈Fiddler/8.png" alt><br><img src="/2020/05/14/浅谈Fiddler/9.png" alt><br><img src="/2020/05/14/浅谈Fiddler/10.png" alt><br><img src="/2020/05/14/浅谈Fiddler/11.png" alt><br>Request Header（请求头域）<br>请求方式：GET<br>协议：HTTP/1.1</p>
+<p>Custom：自定义值<br><img src="/2020/05/14/浅谈Fiddler/8.png" alt><br><img src="/2020/05/14/浅谈Fiddler/9.png" alt><br><img src="/2020/05/14/浅谈Fiddler/10.png" alt></p>
+<p>Request Header（请求头域）<br><img src="/2020/05/14/浅谈Fiddler/11.png" alt><br>请求方式：GET<br>协议：HTTP/1.1</p>
 <ol>
 <li><p>Cache 头域<br>if-Modified-since：缓存<br>if-None-Match：可提高性能（在Response中添加ETag信息，客户端再次请求资源，Request中加入if-None-Match（ETag的值），服务器验证ETag，若没改变返回状态码304，有改变，返回状态码200）<br>Pragma：防止页面被缓存<br>Cache-Control：Response—Request遵循的缓存机制<br>public：可以被任何缓存所缓存<br>private:内容只缓存在私有缓存中<br>no-cache：所有内容都不会被缓存</p>
 </li>
@@ -42,8 +43,11 @@
 </li>
 <li><p>Transport 头域：<br>Host: uat.casserver.yxqiche.com（Host：发送请求时，该报头域是必需的。主要用于指定被请求资源的Internet主机和端口号，通常从HTTP URL 中提取出来）<br>Proxy-Connection:keep-alive（Connection：当网页打开完成后，客户端和服务器之间用于传输HTTP数据的TCP连接是否关闭。keep-alive表示不会关闭，客户端再次访问这个服务器上的网页，会继续使用这一条已经建立的连接；close表示关闭，客户端再次访问这个服务器上的网页，需要重新建立连接。）<br>connection：Keep—alive            TCP连接不会关闭<br>connection：close                 一个Request完成后，TCP连接关闭</p>
 </li>
-<li><p>Miscellaneous头域<br>Referer：提供了Request的上下文信息，告诉服务器我是从哪个链接过来的   A——&gt;B（B的服务器从Referer中统计有多少用户是从A过来的）<br>![](12.png）<br>Response Header（响应头域）</p>
+<li><p>Miscellaneous头域<br>Referer：提供了Request的上下文信息，告诉服务器我是从哪个链接过来的   A——&gt;B（B的服务器从Referer中统计有多少用户是从A过来的）</p>
 </li>
+</ol>
+<p>Response Header（响应头域）<br>![](12.png）</p>
+<ol>
 <li><p>Cache头域<br>Date：生成消息的具体时间和日期<br>Expires：浏览器在指定过期时间内使用本地缓存</p>
 </li>
 <li><p>Cookie/Login头域<br>P3P：用户跨域设置cookie，可以解决iframe跨域访问cookie的问题<br>Set-Cookie：重要的header，用于把cookie发送到客户端浏览器，每一个写入cookie都会生成一个set-cookie</p>
