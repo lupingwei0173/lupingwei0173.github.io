@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HTML基础</title>
-    <url>/2020/05/21/HTML%E5%9F%BA%E7%A1%80/</url>
+    <title>HTML基础(一)</title>
+    <url>/2020/05/21/HTML%E5%9F%BA%E7%A1%80(%E4%B8%80)/</url>
     <content><![CDATA[<p>什么是 HTML？<br>HTML 是用来描述网页的一种语言，是超文本标记语言 (Hyper Text Markup Language)</p>
 <p>HTML 文档 = 网页<br>●文档描述网页<br>●文档包含 HTML 标签和纯文本<br>●文档也被称为网页<br>Web浏览器的作用是读取HTML文档，并以网页的形式显示出它们。浏览器不会显示HTML标签，而是使用标签来解释页面的内容<br>浏览器在显示 HTML 时，会省略源代码中多余的空白字符（空格或回车等）。</p>
 <p>〈 !DOCTYPE html〉</p>
@@ -38,6 +38,30 @@
 <p>HTML 代码格式<br>●通过〈code〉标签定义编程代码<br>〈code〉<br>var person = {<br>    firstName:”Bill”,<br>    lastName:”Gates”,<br>    age:50,<br>    eyeColor:”blue”<br>}<br>〈/code〉<br>(注：不保留多余的空格和折行）</p>
 <p>〈code〉<br>〈pre〉<br>var person = {<br>    firstName:”Bill”,<br>    lastName:”Gates”,<br>    age:50,<br>    eyeColor:”blue”<br>}<br>〈/pre〉<br>〈/code〉<br>(注：保留原有的空格和折行）</p>
 <p>HTML 变量格式化<br>●通过〈var〉 标签定义数学变量<br>实例：<br>〈p〉〈var〉E = m c〈sup〉2〈/sup〉〈/var〉〈/p〉</p>
+<p>HTML CSS<br>●外部样式表(注：过更改一个文件来改变整个站点的外观)<br>〈head〉 〈link rel=”stylesheet” type=”text/css” href=”mystyle.css”〉 〈/head〉</p>
+<p>●内部样式表(注：可以在head部分通过 〈style〉 标签来改变单个文件的样式)<br>〈head〉〈style type=”text/css”〉body {background-color: red}〈/style〉〈/head〉</p>
+<p>●内联样式表<br>〈p style=”color: red; margin-left: 20px”〉This is a paragraph〈/p〉(注：可以使用内联样式改变个别元素)</p>
+<p>七、HTML 超链接<br>HTML 链接语法<br>实例：<br>〈a href=”<a href="https://www.baidu.com&quot;〉百度〈/a〉(注：href为链接的目标，开始和结束标签之间的文字被作为超级链接来显示)" target="_blank" rel="noopener">https://www.baidu.com&quot;〉百度〈/a〉(注：href为链接的目标，开始和结束标签之间的文字被作为超级链接来显示)</a></p>
+<p>HTML 超链接-target<br>实例：<br>〈a href=”<a href="http://www.w3school.com.cn/&quot;" target="_blank" rel="noopener">http://www.w3school.com.cn/&quot;</a> target=”_blank”〉Visit W3School!〈/a〉 (注：使用Target属性，可定义被链接的文档在何处显示。blank为新打开一个窗口显示)</p>
+<p>HTML 链接-name 属性<br>实例：<br>〈a name=”tips”〉基本的注意事项 - 有用的提示〈/a〉(注：HTML 文档中对锚进行命名，创建一个书签)<br>〈a href=”#tips”〉有用的提示〈/a〉(注：在同一个文档中创建指向该锚的链接)<br>或<br>〈a href=”<a href="https://www.baidu.com&quot;〉有用的提示〈/a〉" target="_blank" rel="noopener">https://www.baidu.com&quot;〉有用的提示〈/a〉</a></p>
+<p>八、HTML 图像<br>图像由标签〈img〉和属性组成<br>●src 源属性(注：〈img〉为空标签，src则为源属性)<br>实例：<br>〈img src=”../photo/0.jpg” /〉 (注：src为html所在路径，../表示上一级目录，photo表示图片所在文件夹，同src同级)<br>〈img src=”0.jpg” /〉 (注：src为html所在路径，图片也放在src文件夹)<br>〈img src=”photo/0.jpg”/〉 (注：src为html所在路径，photo为src下放图片的文件夹)<br>〈img src=”D://TEST/0.jpg”/〉(注：src为html所在路径，photo为d盘下放图片的文件夹)</p>
+<p>●Alt 替换文本属性<br>实例：<br>〈img src=”photo/0.jpg” alt=”Big Boat”〉(注：浏览器无法载入图像时，替换文本属性告诉读者她们失去的信息)</p>
+<p>●background 背景图片属性<br>实例：<br>〈body background=”photo/0.jpg”〉</p>
+<p>●align 排列图片属性<br>实例：<br>〈p〉〈img src=”photo/0.jpg” align=”bottom”〉 在文本中〈/p〉(注：bottom 对齐方式是默认的对齐方式)<br>〈p〉〈img src =”photo/0.jpg” align=”middle”〉 在文本中〈/p〉(注：middle 对齐方式是居中的对齐方式)<br>〈p〉〈img src =”photo/0.jpg” align=”top”〉 在文本中〈/p〉(注：top 对齐方式是上对齐方式)<br>〈p〉〈img src =”photo/0.jpg” align =”left”〉 在文本中〈/p〉(注：带图像段落left图像将浮动到文本的左侧)<br>〈p〉〈img src =”photo/0.jpg” align =”right”〉在文本中〈/p〉(注：带图像段落right图像将浮动到文本的右侧)</p>
+<p>● width height图像尺寸属性<br>实例：<br>〈img src=”photo/0.jpg” width=”500” height=”344”  /〉 (注：src为html所在路径，photo为src下放图片的文件夹)</p>
+<p>● href制作图像链接<br>实例：<br>〈p〉〈a href=”/example/html/lastpage.html”〉〈img border=”0” src=”/i/eg_buttonnext.gif” /〉〈/a〉〈/p〉(注：把图像作为链接来使用)</p>
+<p>●〈map〉创建图像映射<br>实例：<br>〈a href=”/example/html/html_ismap.html”〉〈img src=”/i/eg_planets.jpg” ismap /〉〈/a〉(注：如何把一幅普通的图像设置为图像映射)</p>
+<p>九、HTML 表格<br>●表格由〈table〉标签定义(通常〈table〉、〈tr〉、〈td〉组合使用)<br>实例：<br>〈table border=”1”〉 〈/table〉(注：〈table〉 标签定义表格)</p>
+<p>●表格行数由〈tr〉标签定义<br>实例：<br>〈tr〉〈td〉row 2, cell 1〈/td〉〈td〉row 2, cell 2〈/td〉〈/tr〉(注：每个表格均有若干行（由 〈tr〉 标签定义）</p>
+<p>●数据单元格的内容由〈td〉标签定义<br>实例：<br>〈td〉row 2, cell 1〈/td〉〈td〉row 2, cell 2〈/td〉(注：每行被分割为若干单元格（由 〈td〉 标签定义,数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等)</p>
+<p>●表格的表头由〈th〉<br>实例：<br>〈tr〉〈th〉Heading〈/th〉〈th〉Another Heading〈/th〉〈/tr〉(注：大多数浏览器会把表头显示为粗体居中的文本）</p>
+<p>●表格和边框属性 border<br>实例：<br>〈table border=”1”〉〈tr〉〈td〉Row 1, cell 1〈/td〉〈td〉Row 1, cell 2〈/td〉〈/tr〉〈/table〉</p>
+<p>十、HTML 列表<br>●无序列表始于 〈ul〉 标签，每个列表项始于 〈li〉<br>实例：<br>〈ul〉〈li〉coffee〈/li〉〈li〉water〈/li〉〈/ul〉(注：列表项内部可以使用段落、换行符、图片、链接以及其他列表等等)</p>
+<p>●不同类型无序列表使用type属性<br>实例：<br>〈ul type=”square”〉〈li〉coffee〈/li〉〈li〉water〈/li〉〈/ul〉(</p>
+<p>●有序列表始于 〈ol〉 标签，每个列表项始于 〈li〉<br>实例：<br>〈ol〉〈li〉coffee〈/li〉〈li〉water〈/li〉〈/ol〉(注：列表项内部可以使用段落、换行符、图片、链接以及其他列表等等)</p>
+<p>●不同类型有序列表使用type属性<br>〈ol type=”square”〉〈li〉coffee〈/li〉〈li〉water〈/li〉〈/ol〉</p>
+<p>●自定义列表以 〈dl〉 标签开始，每个自定义列表项以 〈dt〉 开始，每个自定义列表项的定义以 〈dd〉 开始<br>〈dl〉〈dt〉★〈/dt〉〈dd〉coffee〈/dd〉〈dt〉★〈/dt〉〈dd〉water〈/dd〉〈dl〉</p>
+<p>●嵌套列表<br>实例：<br>〈ul〉〈li〉咖啡〈/li〉〈li〉茶〈ul〉〈li〉红茶〈/li〉〈li〉绿茶〈/li〉〈/ul〉〈/li〉〈li〉牛奶〈/li〉〈/ul〉</p>
 ]]></content>
       <categories>
         <category>技术分享</category>
