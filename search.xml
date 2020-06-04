@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>XHTML基础</title>
+    <url>/2020/06/03/XHTML%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<p>一、XHTML 规范<br>●元素必须被正确地嵌套<br><b><i>This text is bold and italic</i></b>—错误<br><b><i>This text is bold and italic</i></b>—正确</p>
+<p>●元素必须被关闭<br>■非空标签必须使用结束标签</p>
+<p>This is a paragraph
+</p><p>This is another paragraph
+---错误
+</p><p>This is a paragraph</p>
+<p>This is another paragraph</p>
+---正确
+■空标签必须使用结束标签，或者其开始标签必须使用/>结尾。
+A break: <br>---错误
+A break: <br>---正确
+
+<p>●必须拥有一个根元素<br>所有的 XHTML 元素必须被嵌套于 <html> 根元素中</html></p>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0"> ... </head>
+<body> ... </body>
+</html>
+
+<p>●标签名必须小写<br><body><p>This is a paragraph</p></body>—错误</p>
+<body><p>This is a paragraph</p></body>---正确
+
+<p>●属性名称必须小写</p>
+<table width="100%">---错误
+<table width="100%">---正确
+
+<p>●属性值必须加引号</p>
+<table width="100%">---错误
+<table width="100%">---正确
+
+<p>●属性不能简写<br><input checked><br><input readonly><br>—错误<br><input checked="checked"><br><input readonly="readonly"><br>—正确</p>
+<p>●用id属性代替name属性<br><img src="/2020/06/03/XHTML基础/picture.gif" name="picture1">—错误<br><img src="/2020/06/03/XHTML基础/picture.gif" id="picture1">—正确</p>
+<p>●重要的兼容性：<br>在 “/“ 符号前添加一个额外的空格，使XHTML浏览器与更好相兼容<br>例如<br></p>
+<p>●语言属性（lang）<br>某元素中使用 lang 属性，就必须添加额外的 xml:lang<br>实例：</p>
+<div lang="no" xml:lang="no">Heia Norge!</div>
+lang="no"---页面文本无语言声明
+lang="en"---声明页面文本使用的是英语
+lang="ch"---声明页面文本使用的是中文
+
+<p>●强制使用的XHTML元素<br>■所有 XHTML 文档中声明&lt;!DOCTYPE&gt; 是强制使用的<br>■在 XHTML 文档中必须存在html、head、body元素，而 title 元素必须位于在 head 元素中。<br><!DOCTYPE Doctype goes here></p>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="generator" content="Hexo 3.9.0">
+<title>Title goes here</title>
+</head>
+<body>
+</body>
+</html>
+(注：XHTML中，<html> 标签内的 xmlns 属性是必需的，因为xmlns是个定值，即使你没有把它包含在代码中，这个值也会被添加到 <html> 标签中)
+
+<p>●文档类型声明<br>■DTD规定了使用通用标记语言的网页的语法。<br>■诸如 HTML 这样的通用标记语言应该使用 DTD 来规定应用于某种特定文档中的标签的规则，这些规则包括一系列的元素和实体的声明。<br>■在通用标记语言(SGML)的文档类型声明或 DTD 中，XHTML 被详细地进行了描述。<br>■XHTML DTD 使用精确的可被计算机读取的语言来描述合法的 XHTML 标记的语法和句法。</p>
+<p>●存在三种XHTML文档类型：<br>■STRICT（严格类型）<br>实例：<br><!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><br>在此情况下使用：需要干净的标记，避免表现上的混乱。请与层叠样式表配合使用。</p>
+<p>■TRANSITIONAL（过渡类型）<br>实例：<br><!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><br>在此情况下使用：当需要利用 HTML 在表现上的特性时，并且当需要为那些不支持层叠样式表的浏览器编写 XHTML 时。</p>
+<p>■FRAMESET（框架类型）<br>实例：<br><!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"><br>在此的情况下使用：需要使用HTML框架将浏览器窗口分割为两部分或更多框架时。</p>
+<p>二、XHTML 模块<br>●通过使用模块化的 XHTML，产品和软件设计者可以：<br>■选择被某种设备所支持的元素。<br>■在不打破 XHTML 标准的情况下，使用 XML 对 XHTML 进行扩展。<br>■针对小型设备，对 XHTML 进行简化。<br>■通过添加新的 XML 功能（比如 MathML, SVG, 语音和多媒体），针对复杂的应用对 XHTML 进行扩展。<br>■定义 XHTML 框架，比如 XHTML BASIC （针对移动设备的 XHTML 子集）。<br>●XHTML 模块<br><img src="/2020/06/03/XHTML基础/1.png" alt></p>
+<p>三、XHTML 标准属性<br>●核心属性<br><img src="/2020/06/03/XHTML基础/2.png" alt><br>以下标签不提供下面的属性：base, head, html, meta, param, script, style, 以及 title 元素</p>
+<p>●语言属性<br><img src="/2020/06/03/XHTML基础/3.png" alt><br>以下标签不提供下面的属性：base, br, frame, frameset, hr, iframe, param, 以及 script 元素</p>
+<p>●键盘属性<br><img src="/2020/06/03/XHTML基础/4.png" alt></p>
+<p>四、XHTML 事件属性<br>●窗口事件<br><img src="/2020/06/03/XHTML基础/5.png" alt><br>仅在 body 和 frameset 元素中有效</p>
+<p>●表单元素事件<br><img src="/2020/06/03/XHTML基础/6.png" alt><br>仅在表单元素中有效</p>
+<p>●键盘事件<br><img src="/2020/06/03/XHTML基础/7.png" alt><br>在下列元素中无效：base, bdo, br, frame, frameset, head, html, iframe, meta, param, script, style, 以及 title 元素</p>
+<p>●鼠标事件<br><img src="/2020/06/03/XHTML基础/8.png" alt><br>在下列元素中无效：base, bdo, br, frame, frameset, head, html, iframe, meta, param, script, style, title 元素</p>
+</html></html></table></table></table></table>]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+  </entry>
+  <entry>
     <title>HTML、XHTML和HTML5区别</title>
     <url>/2020/06/02/HTML%E3%80%81XHTML%E5%92%8CHTML5%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>●HTML<br>-HTML 指的是超文本标记语言<br>-HTML 不是一种编程语言，而是一种标记语言，标记语言是一套标记标签<br>-HTML 使用标记标签来描述网页<br>-HTML 标签是由尖括号包围的关键词，比如 〈 html〉<br>-HTML 标签通常是成对出现的，比如 〈 b〉 和 〈 /b〉<br>-HTML 文档包含 HTML 标签和纯文本<br>-HTML 文档也被称为网页<br>-Web 浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们<br>-浏览器不会显示 HTML 标签，而是使用标签来解释页面的内容：</p>
+<p>●XHTML<br>-XHTML 指可扩展超文本标签语言<br>-XHTML 的目标是取代 HTML。<br>-XHTML 与 HTML 4.01 几乎是相同的。<br>-XHTML 是更严格更纯净的 HTML 版本。<br>-XHTML 是作为一种 XML 应用被重新定义的 HTML。<br>-XHTML 是一个 W3C 标准。<br>-XHTML 与 HTML 4.01 兼容。所有新的浏览器都支持 XHTML。</p>
+<p>●XHTML 是以 XML 格式编写的 HTML。</p>
+<p>●XML<br>-XML 指可扩展标记语言<br>-XML 被设计用来传输和存储数据。<br>-XML 指可扩展标记语言<br>-XML 是一种标记语言，很类似 HTML<br>-XML 的设计宗旨是传输数据，而非显示数据<br>-XML 标签没有被预定义。您需要自行定义标签。<br>-XML 被设计为具有自我描述性。<br>-XML 是 W3C 的推荐标准</p>
+<p>●XML与HTML差异<br>-XML不是HTML 的替代<br>-XML和HTML 为不同的目的而设计<br>-XML被设计为传输和存储数据，其焦点是数据的内容<br>-HTML被设计用来显示数据，其焦点是数据的外观<br>-HTML旨在显示信息，而XML旨在传输信息<br>-XML 没什么特别的，它仅仅是纯文本而已</p>
+<p>●XHTML和HTML差异<br>-XHTML 元素必须被，，正确地嵌套<br>-XHTML 元素必须被关闭<br>-标签名必须用小写字母<br>-XHTML 文档必须拥有根元素</p>
+<p>●HTML5<br>-更富语义的标签，以便更好的被机器识别<br>-Canvas+WEBGL等技术，实现无插件的动画以及图像、图形处理能力；<br>-本地存储，可实现offline应用；<br>-websocket，一改http的纯pull模型，实现数据推送的梦想；<br>-用于媒介回放的 video 和 audio 元素<br>-升级后的H5已经不再是单纯意义上的标签了，它的能力已经远远超过标签的范围。<br>-H5除了新增了一些标签外，还增加了一组技术，包括：canvas、SVG、等这些都需要使用javascript来操作<br>-所以h5使html从一门“标记语言”，成为一门“编程语言”；</p>
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>HTML、XHTML、HTML5差异</tag>
+      </tags>
   </entry>
   <entry>
     <title>HTML基础(二)</title>
@@ -41,7 +128,7 @@
         <category>技术分享</category>
       </categories>
       <tags>
-        <tag>HTML_2</tag>
+        <tag>HTML(二)</tag>
       </tags>
   </entry>
   <entry>
@@ -111,7 +198,7 @@
         <category>技术分享</category>
       </categories>
       <tags>
-        <tag>HTML</tag>
+        <tag>HTML(一)</tag>
       </tags>
   </entry>
   <entry>
